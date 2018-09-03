@@ -222,7 +222,13 @@ Tras las entrevistas con usuarios y conocer sus necesidades, se creo un segundo 
 
 [Link a prototipo en Adobe XD - versión mobile](https://xd.adobe.com/view/088dd361-b02e-44b2-7c63-74d7caaca4de-7ebc/?fullscreen)
 
-[Link a prototipo en Adobe XD - versión desktop]()
+[Link a prototipo en Adobe XD - versión desktop](https://xd.adobe.com/view/1aace4ac-a2a9-47a4-64ea-c6f2f5f1b66a-6c9d/?fullscreen&hints=off)
+
+[Link a código mobile en Zeplin](https://zpl.io/VYRnr4M)
+
+[Link a código desktop en Adobe XD](https://xd.adobe.com/spec/8b7c47b6-0e9e-45cc-72e0-bf7f7fcf44b9-fd4d/screen/7222be90-50e0-4cdf-bb34-803661968e65/3-Market-3/)
+
+
 
 ## 9. Proyecto en Drive
 
