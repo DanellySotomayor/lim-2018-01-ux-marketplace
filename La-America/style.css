@@ -18,6 +18,12 @@ body, html {
     background-image: url('img/buffet.jpg');
     min-height: 100%;
 }
+
+.bgimg-2 {
+  background-image: url('img/mesa.jpg');
+  min-height: 550px;
+}
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
