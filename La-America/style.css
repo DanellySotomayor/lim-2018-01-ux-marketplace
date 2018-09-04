@@ -140,7 +140,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+/* Media Query para dispositivo movil*/
 @media only screen and (max-width: 600px) {
   .prev, .next,.text {
     font-size: 11px;
@@ -149,18 +149,29 @@ img {vertical-align: middle;}
     min-width: 320px;
     height: 250px;
   }
+
+  .icon-slide {
+    margin-top: 300px;
+  }
+
+  .logo-final {
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+}
 }
 
 .logo-final {
     width: 90px;
     height: 80px;
+    /* margin-top: 37px; */
 }
 
 .img-map {
     width: 300px;
     height: 250px;
     border-radius: 15px;
-    margin: 3px;
+    margin: 12px;
 }
 
 .div-final {
@@ -174,7 +185,6 @@ img {vertical-align: middle;}
 
 .space-margin {
     margin: 5px;
-    padding: 5px;
 }
 
 .w3-boton {
@@ -185,3 +195,6 @@ img {vertical-align: middle;}
   background-color: rgb(34, 182, 39)!important;
 }
 
+.icon-slide {
+  margin-top: 320px;
+}
