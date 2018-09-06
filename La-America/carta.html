@@ -10,38 +10,627 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body class="w3-black">
     <div class="w3-top ">
-        <div class="w3-bar w3-transparent " id="myNavbar">
+        <div class="w3-bar w3-black " id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
                 title="Toggle Navigation Menu">
                 <i class="fa fa-bars w3-xxlarge"></i>
             </a>
-            <a href="index.html" class="w3-bar-item w3-button w3-left w3-hover-black" style="color:white;"><i class="fa fa-home w3-xxlarge"></i></a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Menu</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
+            <a href="shop" class="w3-bar-item w3-button w3-large w3-right w3-hide-small"><i class="fa fa-shopping-cart w3-large"></i></a>
+            <a class="w3-left" href="index.html"><img class="logo-final" src="img/logo-america.png"></a>
+            <a href="#about" class="w3-bar-item w3-button w3-large w3-right w3-hide-small" style="color:white;">
+                Contáctanos</a>
+            <a href="#about" class="w3-bar-item w3-button w3-large w3-right w3-hide-small" style="color:white;">
                 Catering</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
+            <a href="#about" class="w3-bar-item w3-button w3-large w3-right w3-hide-small" style="color:white;">
                 Productos</a>
-            <a href="menu.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
+            <a href="carta.html" class="w3-bar-item w3-button w3-large w3-right w3-hide-small" style="color:white;">
                 Nuestra Carta</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
+            <a href="index.html" class="w3-bar-item w3-button w3-large w3-right w3-hide-small" style="color:white;">
                 Conócenos</a>
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium w3-large">
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Conócenos</a>
-            <a href="menu.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Nuestra Carta</a>
+            <a href="carta.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Nuestra Carta</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Productos</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Catering</a>
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Contáctanos</a>
         </div>
     </div>
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px; position: absolute;">
+        <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">HAMBURGUESAS</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">SALCHIPAPAS</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'green')">ENSALADAS</button>
+        <button class="tablink" onclick="openPage('About', this, 'green')">EXTRAS</button>
+
+
+        <div id="Home" class="tabcontent">
+            <!-- Photo grid -->
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Ingredientes">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for full size images on click-->
+            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="News" class="tabcontent">
+            <!-- Photo grid -->
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Ingredientes">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <!-- Photo grid -->
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Ingredientes">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <!-- Photo grid -->
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Ingredientes">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/2.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La América</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/3.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Perucha</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <span class="span-text">S/.12.50</span>
+                        <img class="img-product" src="img/1.jpg" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+
+                        <div class="top-right">
+                            <button class="w3-green button-size">+</button>
+                            <span> 0 </span>
+                            <button class="w3-green button-size">-</button>
+                        </div>
+                        <div class="text-block">
+                            <p class="text-menu">La Chinita</p>
+                            <a href="" class="sub-menu">Ingredientes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="w3-center w3-hover-opacity-off w3-green">
+            <i class="fa fa-copyright fa-fw w3-hover-text-black w3-large w3-margin-right"></i><span>2018. Todos los derechos
+                reservados
+            </span>
+        </div>
+    </div>
+    <script src="js/carta.js"></script>
 </body>
 
 </html>
