@@ -1,6 +1,7 @@
 ![](La-America/img/banner.jpg)
 
 # Propuesta de plataforma en línea - La América H&C
+[Visita nuestro proyecto en Wix aquí](https://danellylucia.wixsite.com/laamericahyc)
 
 Hoy en día, el 78% de peruanos opta por alternativas orgánicas para su alimentación. Esta cifra, producto de un [estudio de la consultora Nielsen](http://www.nielsen.com/pe/es/insights/reports/2017/La-revolucion-de-los-alimentos-en-America-Latina-la-salud-es-una-prioridad-para-el-consumidor.html), refleja uno de los niveles más altos de consumo en la región latinoamericana.
 
@@ -28,7 +29,7 @@ Su público objetivo son personas residentes de Lince entre 21 a 35 años, quien
 
 Crear una plataforma web online que refleje la identidad de la América y les permita ofrecer sus productos virtualmente y de manera ordenada.
 
-### 3.1 Hipotesis
+### 3.1 Hipótesis
 Al desarrollar una tienda virtual donde esten expuestos los productos de la  América se generarán más clientes fidelizados.
 
 ## 4. Planificación de actividades
