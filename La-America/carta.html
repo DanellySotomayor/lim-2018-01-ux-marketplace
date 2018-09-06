@@ -10,38 +10,126 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="carta.css">
 </head>
 
 <body class="w3-black">
-    <div class="w3-top ">
-        <div class="w3-bar w3-transparent " id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
-                title="Toggle Navigation Menu">
-                <i class="fa fa-bars w3-xxlarge"></i>
-            </a>
-            <a href="index.html" class="w3-bar-item w3-button w3-left w3-hover-black" style="color:white;"><i class="fa fa-home w3-xxlarge"></i></a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Menu</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Catering</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Productos</a>
-            <a href="menu.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Nuestra Carta</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-large w3-hover-black" style="color:white;">
-                Conócenos</a>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-green w3-animate-right w3-top w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;"
+        id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-3">X</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Conócenos</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Nuestra Carta</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Productos</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Catering</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Contáctanos</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-black w3-xlarge w3-padding-16">
+        <span class="w3-left"><img class="logo-final" src="img/logo-america.png"></span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-black" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px; position: absolute;">
+        <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">HAMBURGUESAS</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">SALCHIPAPAS</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'green')">ENSALADAS</button>
+        <button class="tablink" onclick="openPage('About', this, 'green')">EXTRAS</button>
+
+
+        <div id="Home" class="tabcontent">
+            <!-- Photo grid -->
+            <div class="w3-row w3-grayscale-min">
+                <div class="w3-quarter">
+                    <img src="img/burguer.jpg" style="width:100%;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="img/burguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="img/burguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="img/burguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                </div>
+            </div>
+
+            <!-- Modal for full size images on click-->
+            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption"></p>
+                </div>
+            </div>
         </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium w3-large">
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Conócenos</a>
-            <a href="menu.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Nuestra Carta</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Productos</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Catering</a>
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Contáctanos</a>
+        <div id="News" class="tabcontent">
+            <div class="w3-row w3-grayscale-min">
+                <div class="w3-quarter">
+                    <img src="img/burguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                    <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                </div>
+            </div>
         </div>
+
+        <div id="Contact" class="tabcontent">
+            <div class="w3-row w3-grayscale-min">
+                    <div class="w3-quarter">
+                            <img src="img/burguer.jpg" style="width:100%;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                            <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                            <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                        </div>
+            </div>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <div class="w3-row w3-grayscale-min">
+                    <div class="w3-quarter">
+                            <img src="img/burguer.jpg" style="width:100%;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                            <img src="img/hamburguer.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+                            <img src="img/bur.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+                        </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+        <!-- End page content -->
     </div>
+    <script src="js/carta.js"></script>
 </body>
 
 </html>
