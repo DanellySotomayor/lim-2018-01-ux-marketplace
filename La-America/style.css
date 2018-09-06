@@ -162,9 +162,15 @@ img {vertical-align: middle;}
 }
 
 .logo-final {
-    width: 90px;
-    height: 80px;
-    /* margin-top: 37px; */
+    width: 60px;
+    height: 50px;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+
+.logo-footer {
+  width: 90px;
+  height: 80px;
 }
 
 .img-map {
@@ -198,3 +204,88 @@ img {vertical-align: middle;}
 .icon-slide {
   margin-top: 320px;
 }
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.w3-quarter img{
+  margin: 6px; 
+  cursor: pointer}
+
+.container {
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 150px;
+}
+
+.text-menu{
+  font-size: 19.5px;
+  width: 100%;
+  margin: 0px;
+}
+
+.sub-menu{
+  font-size: 14px;
+}
+
+.top-right{
+  position:absolute;
+  top: 30px;
+  right: 16px;
+  background-color: rgba(253, 253, 253, 0.363);
+  color: black;
+  margin: 5px;
+}
+
+.button-size {
+  width: 28px;
+  height: 28px;
+}
+
+.span-text{
+  position: absolute;
+  color: black;
+  top: 5px;
+  right: 16px;
+  font-size: 18px;
+  margin: 0px 5px;
+}
+
+.img-product{
+width: 100%;
+}
+
