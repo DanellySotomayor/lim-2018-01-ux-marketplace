@@ -241,4 +241,4 @@ Tras las entrevistas con usuarios y conocer sus necesidades, se creo un segundo 
 
 ## 11. Medium Post
 
-[Link al Post en Medium] (https://medium.com/@joselynsilva/la-am%C3%A9rica-proyecto-marketplace-105bcccbefaf)
+[Link al Post en Medium](https://medium.com/@joselynsilva/la-am%C3%A9rica-proyecto-marketplace-105bcccbefaf)
