@@ -231,8 +231,6 @@ Tras las entrevistas con usuarios y conocer sus necesidades, se creo un segundo 
 
 [Link a código desktop en Adobe XD](https://xd.adobe.com/spec/8b7c47b6-0e9e-45cc-72e0-bf7f7fcf44b9-fd4d/screen/7222be90-50e0-4cdf-bb34-803661968e65/3-Market-3/)
 
-
-
 ## 9. Proyecto en Drive
 
 [Link a proyecto en Google Drive](https://drive.google.com/drive/folders/1JW1e15XYr1ctluaSLhnEBGaMz2QVn9PW?usp=sharing)
@@ -240,3 +238,7 @@ Tras las entrevistas con usuarios y conocer sus necesidades, se creo un segundo 
 ## 10. Video en Loom
 
 [Link a video en Loom](https://www.useloom.com/share/a9f5745b337049ba88b94a63603f0d2f)
+
+## 11. Medium Post
+
+[Link al Post en Medium](https://medium.com/@joselynsilva/la-am%C3%A9rica-proyecto-marketplace-105bcccbefaf)
